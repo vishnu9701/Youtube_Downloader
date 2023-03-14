@@ -1,4 +1,4 @@
-imported streamlit as st
+import streamlit as st
 from pytube import YouTube
 import os
 import re
