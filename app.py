@@ -3,10 +3,7 @@ from pytube import YouTube
 import os
 import re
 
-directory= 'downloads/'
-if not os.path.exists(directory):
-    os.makedirs(directory)
-    
+
 st.set_page_config(page_title="YT-75 ", page_icon="🎧" )     
 st.markdown(f"""
             <style>
