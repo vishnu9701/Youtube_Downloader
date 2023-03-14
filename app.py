@@ -67,7 +67,7 @@ if url:
             with st.spinner('Downloading...'):
                 try:
                     ds = v_info["streams"].get_by_itag(v_info['itag'][id])
-                    ds.download(filename= file_name, output_path= "Youtube_downloads/")
+                    ds.download(filename= file_name)
                     st.success('Download Complete', icon="✅")       
                     st.balloons()
                 except:
