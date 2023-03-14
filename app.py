@@ -1,4 +1,4 @@
-import streamlit as st
+imported streamlit as st
 from pytube import YouTube
 import os
 import re
@@ -67,7 +67,7 @@ if url:
             with st.spinner('Downloading...'):
                 try:
                     ds = v_info["streams"].get_by_itag(v_info['itag'][id])
-                    ds.download(filename= file_name,output_path= "downloads/"))
+                    ds.download(filename= file_name,output_path= "downloads/")
                     st.success('Download Complete', icon="✅")       
                     st.balloons()
                 except:
