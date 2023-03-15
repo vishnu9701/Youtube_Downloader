@@ -61,7 +61,8 @@ def refine_format(fmt_type: str='audio') -> (str, bool):
     return fmt, progressive
 
 
-st.set_page_config(page_title="YT-75 ", page_icon="🎧" )     
+st.set_page_config(page_title="YT-75 ", page_icon="🎧" )
+st.title("Youtube Panda app")
 st.markdown(f"""
             <style>
             .stApp {{background-image: url("https://media.istockphoto.com/id/1300153684/photo/soft-abstract-color-gradient-floral-background-abstract-dandelion.jpg?b=1&s=170667a&w=0&k=20&c=aDaNHQEGAC50wdcW_4gCSKP2sqUQxf3CNYhZGOumBCk="); 
@@ -73,16 +74,6 @@ st.markdown(f"""
 
 # ====== MAIN PAGE ======
 
-url = st.text_input("Insert your link here", key="url")
-
-fmt_type = st.selectbox("Choose format:", ['video (only)', 'audio (only)', 'video + audio'], key='fmt')
-
-fmt, progressive = refine_format(fmt_type)
-
-
-
-
-st.title("Youtube Panda app")
 
 url = st.text_input("Insert your link here", key="url")
 
