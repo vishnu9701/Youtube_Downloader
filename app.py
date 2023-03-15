@@ -130,7 +130,3 @@ if can_access(url):
         thumbnail_image = requests.get(thumbnail_url).content
         st.image(thumbnail_image, use_column_width=True)
 
-        length = tube.length
-        minutes = length // 60
-        seconds = length % 60
-        st.write(f"Length: {minutes} minutes, {seconds} seconds")
