@@ -126,7 +126,4 @@ if can_access(url):
     else:
         st.video(url)
 
-        thumbnail_url = tube.thumbnail_url
-        thumbnail_image = requests.get(thumbnail_url).content
-        st.image(thumbnail_image, use_column_width=True)
 
