@@ -77,7 +77,7 @@ st.markdown(f"""
 
 url = st.text_input("Insert your link here", key="url")
 
-fmt_type = st.selectbox("Choose format:", ['video (only)', 'audio (only)', 'video + audio'], key='fmt')
+fmt_type = st.selectbox("Choose format:", ['video + audio','audio (only)','video (only)'], key='fmt')
 
 fmt, progressive = refine_format(fmt_type)
 
